@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    height:100vh;
+    width:100%;
+    background:hsl(225, 100%, 94%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.card{
+    width:350px;
+    height:80vh;
+    border-radius:20px;
+}
+.upper-body{
+    width:100%;
+    position:relative;
+    height:35%;
+    
+}
+.upper-body img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+.lower-body{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    padding:5px 30px;     
+    background-color: white;
+    height:65%;  
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.order-summary{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.order-summary .heading{
+    text-align: center; 
+    margin:6px;
+}
+.order-summary .para p{
+    text-align:center;
+    color:hsl(224, 23%, 55%);
+    font-size:15px;
+}
+.pricing{
+    display:flex;
+    background-color: hsl(225, 100%, 98%);
+    padding:15px;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;  
+    border-radius:10px;      
+}
+.pricing .plan{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+.plan h3{
+    margin:2px;
+    font-weight:400;
+}
+.plan h4{
+    font-weight: 100;
+}
+.pricing .change button
+{
+    background:transparent;
+    border:none;
+    outline :none;
+    color:hsl(245, 75%, 52%);
+    text-decoration: underline;
+    text-align: center;
+    cursor:pointer;
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+   
+}
+.payment button{
+    width:100%;
+    font-size:0.8em;
+    text-align: center;
+    padding:15px;
+    margin:4px;
+    outline:none;
+    border:none;    
+    cursor:pointer;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.proceed{
+    background:hsl(245, 75%, 52%);
+    color:white;
+    font-weight:500;
+    border-radius:10px;
+}
+.cancel{
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+    
+    
+}
+.cancel:hover{
+    color:black;
+}
+.proceed:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+/* @media screen  and (max-width:1440px){
+    .card{
+        width:350px;
+        height:70%;
+    }
+}*/
+@media screen and (max-width:275px) {
+    .card{
+        width:70%;
+        height:70%; 
+    }
+} 
